@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-23T11:45:41 IST" name="Suite" finished-at="2024-10-23T11:48:43 IST" duration-ms="182363">
+  <suite started-at="2024-11-06T22:36:49 IST" name="Master Suite" finished-at="2024-11-06T22:36:58 IST" duration-ms="9432">
     <groups>
       <group name="Master">
-        <method signature="TC001_AccountRegistrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@52b1beb6]" name="verify_account_registration" class="testCases.TC001_AccountRegistrationTest"/>
+        <method signature="TC005_AddToCartPageTest.verify_addToCart()[pri:0, instance:testCases.TC005_AddToCartPageTest@52b1beb6]" name="verify_addToCart" class="testCases.TC005_AddToCartPageTest"/>
       </group> <!-- Master -->
-      <group name="Regression">
-        <method signature="TC001_AccountRegistrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@52b1beb6]" name="verify_account_registration" class="testCases.TC001_AccountRegistrationTest"/>
-      </group> <!-- Regression -->
-      <group name="sanity">
-        <method signature="TC001_AccountRegistrationTest.verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@52b1beb6]" name="verify_account_registration" class="testCases.TC001_AccountRegistrationTest"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-10-23T11:45:41 IST" name="Linux-Chrome" finished-at="2024-10-23T11:48:43 IST" duration-ms="182363">
-      <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@52b1beb6]" started-at="2024-10-23T11:45:41 IST" name="setup" finished-at="2024-10-23T11:48:43 IST" duration-ms="181830" status="FAIL">
+    <test started-at="2024-11-06T22:36:49 IST" name="Test" finished-at="2024-11-06T22:36:58 IST" duration-ms="9432">
+      <class name="testCases.TC005_AddToCartPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_AddToCartPageTest@52b1beb6]" started-at="2024-11-06T22:36:49 IST" name="setup" finished-at="2024-11-06T22:36:55 IST" duration-ms="6168" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Linux]]>
+                <![CDATA[windows]]>
               </value>
             </param>
             <param index="1">
@@ -29,92 +23,31 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-EF27B0K', ip: '192.168.1.5']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-EF27B0K', ip: '192.168.1.5'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
-at testBase.BaseClass.setup(BaseClass.java:72)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:418)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:374)
-at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-... 28 more
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:401)
-... 38 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@52b1beb6]" started-at="2024-10-23T11:48:43 IST" name="verify_account_registration" finished-at="2024-10-23T11:48:43 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="verify_addToCart()[pri:0, instance:testCases.TC005_AddToCartPageTest@52b1beb6]" started-at="2024-11-06T22:36:55 IST" name="verify_addToCart" finished-at="2024-11-06T22:36:58 IST" duration-ms="2208" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-EF27B0K', ip: '192.168.1.5']]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'DESKTOP-EF27B0K', ip: '192.168.1.5'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:563)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:152)
-at testBase.BaseClass.setup(BaseClass.java:72)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testCases.TC005_AddToCartPageTest.verify_addToCart(TC005_AddToCartPageTest.java:34)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -131,38 +64,17 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:418)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:374)
-at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-... 28 more
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:401)
-... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_account_registration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccountRegistrationTest@52b1beb6]" started-at="2024-10-23T11:48:43 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729664323811" status="SKIP">
+        </test-method> <!-- verify_addToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_AddToCartPageTest@52b1beb6]" started-at="2024-11-06T22:36:58 IST" name="tearDown" finished-at="2024-11-06T22:36:58 IST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
-    </test> <!-- Linux-Chrome -->
-  </suite> <!-- Suite -->
+      </class> <!-- testCases.TC005_AddToCartPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Master Suite -->
 </testng-results>
